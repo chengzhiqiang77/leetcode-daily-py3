@@ -499,3 +499,10 @@ from math import inf, log
 # target = 9
 # for i, j in enumerate(nums)：
 
+nums = [2, 2, 3, 4]
+ans = 0
+for i in range(len(nums)):
+    for j in range(i+1, len(nums)):
+        n = bisect.bisect_left(nums, nums[i]+nums[j]) - j - 1
+        ans += max(n, 0)    # 去掉i，j中包含0的情况，此时二分查找失败
+print(ans)
