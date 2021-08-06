@@ -30,9 +30,9 @@ def searchMatrix(self, matrix: list[list[int]], target: int) -> bool:
         right = len(li) - 1
         while left <= right:
             mid = (left + right) // 2
-            if li(mid) == val:
+            if li[mid] == val:
                 return mid
-            elif li(mid) > val:
+            elif li[mid] > val:
                 right = mid - 1
             else:
                 left = mid + 1
