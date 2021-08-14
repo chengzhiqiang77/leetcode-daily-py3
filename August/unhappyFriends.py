@@ -21,7 +21,7 @@
 # 遍历找到u，则就满足第一个条件，x与u的亲近程度胜过x与y，之后只需要判断，u所对应的v的好感排名是否超过u与x的好感排名，如果成立，则答案加1，退出循环
 
 
-def unhappyFriends(self, n: int, preferences: List[List[int]], pairs: List[List[int]]) -> int:
+def unhappyFriends(self, n: int, preferences: list[list[int]], pairs: list[list[int]]) -> int:
     answer = 0
     love = [[0] * n for _ in range(n)]
     married = [0] * n
