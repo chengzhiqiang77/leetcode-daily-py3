@@ -7,7 +7,7 @@
 # 2. get(string key, int timestamp)
 #
 # 返回先前调用set(key, value, timestamp_prev)所存储的值，其中timestamp_prev <= timestamp。
-# 如果有多个这样的值，则返回对应最大的  timestamp_prev的那个值。
+# 如果有多个这样的值，则返回对应最大的timestamp_prev的那个值。
 # 如果没有值，则返回空字符串（""）。
 #
 # 示例 1：
