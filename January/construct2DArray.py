@@ -12,7 +12,7 @@
 
 
 # 题解1：
-# 思路：首先判断数组的长度是否符合n*m，然后进行转化即可；
+# 思路：首先判断数组的长度是否符合n*m，然后进行转化即可 ；
 
 
 def construct2DArray(self, original: list[int], m: int, n: int) -> list[list[int]]:
